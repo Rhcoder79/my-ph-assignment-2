@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*  header part */
+ .head{        display: flex;
+        justify-content: space-around;
+        align-items: center;
+margin-top: 10px;
+box-sizing: border-box;
+}
+
+.fir-head>img{    width: 80%;
+}
+.sec-head{
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.card::before{
+    content: url(img/shopping-cart.png);
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+/* banner section*/
+ .banner{    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ 
+ .left-ban>h1{
+   font-size:4vw ;
+ }
+ .left-ban>p{
+    font-size: 2vw;
+    color: #000000;
+    opacity: 50%;
+}
+.right-ban{
+    width: 40%;
+}
+.right-ban>img{
+   width: 100%;
+}
+
+    @media screen and (max-width:876px) {
+    .head{
+        justify-content: space-between;
+    }
+    .sec-head{
+        visibility: hidden;
+    }
+    .card{
+        visibility: visible;
+    }
+    .banner{
+        display: flex;
+           gap: 10px;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+        margin-left: 10px;
+    }
+    .left-ban{
+        width: 100%;
+    }
+    .right-ban{
+        width: 100%;
+    }
+}
